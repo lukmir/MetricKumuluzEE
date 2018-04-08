@@ -2,15 +2,21 @@ package com.kumuluzee.metric.model.rest;
 
 public class Customer {
 
-  private String id;
+  private int id;
   private String firstName;
   private String lastName;
 
-  public String getId() {
+  public Customer(int id, String firstName, String lastName) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  public int getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(int id) {
     this.id = id;
   }
 
