@@ -10,6 +10,7 @@
 
     <properties>
         <kumuluzee.version>2.4.1</kumuluzee.version>
+        <kumuluzee-metrics.version>1.0.0</kumuluzee-metrics.version>
     </properties>
 
     <dependencyManagement>
@@ -50,6 +51,17 @@
         <dependency>
             <groupId>com.kumuluz.ee.metrics</groupId>
             <artifactId>kumuluzee-metrics-core</artifactId>
+            <version>${kumuluzee-metrics.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kumuluz.ee.metrics</groupId>
+            <artifactId>kumuluzee-metrics-logs</artifactId>
+            <version>${kumuluzee-metrics.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kumuluz.ee.metrics</groupId>
+            <artifactId>kumuluzee-metrics-logstash</artifactId>
+            <version>${kumuluzee-metrics.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.microprofile.metrics</groupId>
