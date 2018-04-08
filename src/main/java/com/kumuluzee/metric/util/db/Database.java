@@ -15,7 +15,7 @@ public class Database {
 
   public static Customer getCustomer(int customerId) {
     for (Customer customer : customerList) {
-      if (customer.getId().equals(customerId)) {
+      if (customer.getId() == customerId) {
         return customer;
       }
     }
@@ -29,7 +29,7 @@ public class Database {
 
   public static void deleteCustomer(int customerId) {
     for (Customer customer : customerList) {
-      if (customer.getId().equals(customerId)) {
+      if (customer.getId() == customerId) {
         customerList.remove(customer);
         break;
       }

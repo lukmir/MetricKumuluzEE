@@ -71,7 +71,7 @@
     </dependencies>
 
     <build>
-        <finalName>HelloWorldKumuluzEE</finalName>
+        <finalName>MetricKumuluzeEE</finalName>
 
         <plugins>
             <plugin>
